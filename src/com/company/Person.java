@@ -30,6 +30,30 @@ public class Person {
         return true;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getSureName() {
+        return sureName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     public PersonBuilder newChildBuilder() {
         return new PersonBuilder()
                 .setSureName(this.sureName)
@@ -45,3 +69,4 @@ public class Person {
         return name +" " + sureName + " " +  age + " " + address;
     }
 }
+
