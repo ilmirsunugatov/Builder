@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Objects;
+
 public class Person {
    private final String name;
    private final String sureName;
@@ -67,6 +69,11 @@ public class Person {
     @Override
     public String toString() {
         return name +" " + sureName + " " +  age + " " + address;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, sureName, age, address);
     }
 }
 
