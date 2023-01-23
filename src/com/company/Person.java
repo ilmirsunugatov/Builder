@@ -20,7 +20,7 @@ public class Person {
         this.sureName = sureName;
     }
     boolean hasAge() {
-        if(this.age == 0 ){
+        if(this.age < 0 ){
             return false;
         }
         return true;
