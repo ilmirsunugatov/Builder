@@ -51,7 +51,11 @@ public class Person {
     }
 
     public void happyBirthday() {
-        this.age++;
+        if(this.age == 0) {
+            return;
+        } else {
+            this.age++;
+        }
     }
 
     public PersonBuilder newChildBuilder() {
